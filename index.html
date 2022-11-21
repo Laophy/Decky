@@ -7,6 +7,17 @@
     <title>Decky</title>
 </head>
 <body>
-    
+    <h1>Javascript Template</h1>
 </body>
+
+<script>
+    var calculateTotalPrice = function(price, disccountPercent){
+        var discountedPrice = price -(price*(disccountPercent/100));
+        var total = discountedPrice + (discountedPrice * (taxPercent/100));
+        return total;
+    }
+
+    var taxPercent = 5;
+    alert(calculateTotalPrice(100, 5.5, 10) + ", " + calculateTotalPrice(200, 5.5, 10));
+</script>
 </html>
